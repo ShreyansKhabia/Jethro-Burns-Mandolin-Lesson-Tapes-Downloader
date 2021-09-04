@@ -15,7 +15,7 @@ soup = BeautifulSoup(r.content, 'html5lib')
 
 folname = []
 folder = soup.find_all('td', class_="heading")
-parent_dir = "D:\Music\Dada\Python"
+parent_dir = "D:\Music\Dada\Python" #change path to where you want to download the lessons
 for f in folder:
     heading = f.text.replace(' ', '').replace('\n', '')
     if 'Disc' in heading:
